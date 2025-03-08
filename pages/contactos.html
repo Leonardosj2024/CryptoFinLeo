@@ -65,39 +65,46 @@
           <article class="col-12 col-md-6 mb-3">
             <form>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label"
-                  >Email address</label
-                >
+                <label for="Name">Apellido y nombre</label>
+                <input
+                  type="text"
+                  class="form-control mb-3"
+                  id="Name"
+                  placeholder="Leonardo "
+                  required
+                  minlength="6"
+                />
+
+                <label for="Email1" class="form-label">Email </label>
                 <input
                   type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
+                  class="form-control mb-3 " placeholder="micorreo@gmail.com" maxlength="20"
+                  id="Email1"
                   aria-describedby="emailHelp"
                 />
-                <div id="emailHelp" class="form-text">
-                  We'll never share your email with anyone else.
+                <div id="email" class="form-text">
+                  
                 </div>
               </div>
               <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label"
-                  >Password</label
-                >
+
+                <label for="Number">Telefono</label>
                 <input
-                  type="password"
-                  class="form-control"
-                  id="exampleInputPassword1"
+                  type="number"
+                  class="form-control mb-3"
+                  id="Number"
+                  placeholder="264123456 "
+                  required
+                  minlength="11"
                 />
-              </div>
-              <div class="mb-3 form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="exampleCheck1"
-                />
-                <label class="form-check-label" for="exampleCheck1"
-                  >Check me out</label
+
+                <label for="Consulta" class="form-label"
+                  >Agregue su consulta</label
                 >
+                <textarea class="form-control"  id="Consulta" rows="4" required minlength="10" maxlength="250" placeholder="Ingrese su consulta maximo 250 caracteres"></textarea>
+                
               </div>
+            
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>
           </article>
